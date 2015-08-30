@@ -2,9 +2,10 @@
 
 
 /**
- * This file contains the base for competiton code.
- * The three sections include Pre-Auton, Auton, and User
- * Control.
+ * @file    main.c
+ * @brief   This file contains the base for competiton code.
+ * @details The three sections include Pre-Auton, Auton, and User
+ *          Control.
  *
  * @author		Sean Kelley     sgtkode01@gmail.com
  *

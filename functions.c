@@ -1,6 +1,9 @@
 /**
- * This file contains all functions to be used by
- * the competition code. DO NOT compile this file
+ * @file functions.c
+ * @brief This file contains all functions to be used by
+ * the competition code.
+ *
+ * @warning DO NOT compile this file
  * by itself, it will not work. Instead, save it
  * and compile main.c
  *
