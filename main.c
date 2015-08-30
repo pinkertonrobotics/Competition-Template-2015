@@ -32,6 +32,9 @@
 //
 /////////////////////////////////////////////////////////////////////////////////////////
 
+/**
+ * Period before autonomous when bot cannot move, but minimal code can run
+ */
 void pre_auton()
 {
  bStopTasksBetweenModes = true;
@@ -45,7 +48,9 @@ void pre_auton()
 //
 /////////////////////////////////////////////////////////////////////////////////////////
 
-
+/**
+ * Period of match when bot is using only code to operate.
+ */
 task autonomous(){
 
 }
@@ -58,6 +63,9 @@ task autonomous(){
 //
 /////////////////////////////////////////////////////////////////////////////////////////
 
+/**
+ * Period of match when driver controls the bot
+ */
 task usercontrol(){
 	while (true) {
 		if(bVEXNETActive){
