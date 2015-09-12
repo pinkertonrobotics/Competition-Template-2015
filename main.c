@@ -7,8 +7,8 @@
  * @details The three sections include Pre-Auton, Auton, and User
  *          Control.
  *
- * @authors		Sean Kelley     sgtkode01@gmail.com
- *				Bernard Suwirjo bsuwirjo@gmail.com
+ * @author		Sean Kelley      sgtkode01@gmail.com
+ * @author		Bernard Suwirjo  bsuwirjo@gmail.com
  */
 
 
@@ -16,7 +16,7 @@
 
 //Competition Control and Duration Settings
 #pragma competitionControl(Competition)
-#pragma autonomousDuration(20)
+#pragma autonomousDuration(15)
 #pragma userControlDuration(120)
 
 //Main competition background code...do not modify!
@@ -68,12 +68,25 @@ task autonomous(){
  * Period of match when driver controls the bot
  */
 task usercontrol(){
-			//DRIVE-----------------------------------------------------
-while (true) 
+
+
+  while (true)
 	{
-				motor[BR] = vexRT[Ch2];
-				motor[FR] = vexRT[Ch2];
-				motor[BL] = vexRT[Ch3];
-				motor[FL] = vexRT[Ch3];
+    if(bVEXNETActive){
+
+
+      
+      /////////////////////////////////////////////////////////////////////////////////////////
+      //
+      //                                      Drive
+      //
+      /////////////////////////////////////////////////////////////////////////////////////////
+  		motor[BR] = vexRT[Ch2];
+  		motor[FR] = vexRT[Ch2];
+  		motor[BL] = vexRT[Ch3];
+  		motor[FL] = vexRT[Ch3];
+
+      wait1Msec(10);
+    }
 	}
 }

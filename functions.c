@@ -7,8 +7,8 @@
  * by itself, it will not work. Instead, save it
  * and compile main.c
  *
- * @authors		Sean Kelley     sgtkode01@gmail.com
- *				Bernard Suwirjo bsuwirjo@gmail.com
+ * @author	 Sean Kelley      sgtkode01@gmail.com
+ * @author   Bernard Suwirjo  bsuwirjo@gmail.com
  */
 
 /////////////////////////////////////////////////////////////////////////////////////////
@@ -24,11 +24,11 @@
 /////////////////////////////////////////////////////////////////////////////////////////
 
 /**
-* @void drive
+* Gives drive control to VexNET controller
 *
-* @desc gives drive control to VexNET controller
+* @author Bernard Suwirjo  bsuwirjo@gmail.com
 *
-* @args  half boolean  determines if motors should be running at half speed
+* @param  half  determines if motors should be running at half speed
 */
 void drive(bool half)
 {
@@ -51,11 +51,9 @@ void drive(bool half)
 
 
 /**
-* @void clearMotor
+* Clears all the motors
 *
-* @desc clears all the motors
-*
-* @args  N/A
+* @author Bernard Suwirjo  bsuwirjo@gmail.com
 */
 void clearMotor()
 {
@@ -66,11 +64,9 @@ void clearMotor()
 }
 
 /**
-* @void motorcheck
+* Runs each motor for 1.5 seconds
 *
-* @desc runs each motor for 1.5 seconds
-*
-* @args  N/A
+* @author Bernard Suwirjo  bsuwirjo@gmail.com
 */
 void motorcheck()
 {
@@ -89,11 +85,14 @@ void motorcheck()
 }
 
 /**
-* @void fullStop
+* Completely stops all motors without drift
 *
-* @desc completely stops all motors without drift
+* @author Bernard Suwirjo  bsuwirjo@gmail.com
 *
-* @args  N/A
+* @param x speed of motors
+* @param direction 1=forwards, 2=backwards
+* @param fancy use special stuff to stop???
+*
 */
 void fullStop(int x=118,int direction=0, bool fancy=false)
 {
@@ -173,12 +172,11 @@ void fullStop(int x=118,int direction=0, bool fancy=false)
 
 
 /**
-* @void forwardSeconds
+* Moves bot forward for a given amount of seconds
 *
-* @desc moves bot forward for a given amount of seconds
+* @params  s  amount of seconds to move forward
+*	@params  x  speed of motors
 *
-* @args  s  int    amount of seconds to move forward
-				 x  float  speed of motors
 */
 void forwardSeconds(float s,float x=118)
 {
@@ -191,12 +189,11 @@ void forwardSeconds(float s,float x=118)
 }
 
 /**
-* @void backwardSeconds
+* Moves bot backward for a given amount of seconds
 *
-* @desc moves bot backwards for a given amount of seconds
+* @params  s  amount of seconds to move backward
+*	@params  x  speed of motors
 *
-* @args  s  int    amount of seconds to move forward
-*				 x  float  speed of motors
 */
 void backwardSeconds(float s, float x=118)
 {
@@ -209,11 +206,8 @@ void backwardSeconds(float s, float x=118)
 }
 
 /**
-* @task lockLeftSide
+* Locks left side motors with PI loop
 *
-* @desc locks left side motors with PI loop
-*
-* @args  N/A
 */
 /*
 task lockLeftSide()
@@ -254,14 +248,14 @@ task lockRightSide()
 	}
 }
 */
+
 /**
-* @void fancyTurnRightDegrees
+* Turns bot right only using left side motors
 *
-* @desc turns bot right only using left side motors
+* @params   degrees   amount of degrees to turn right
+* @params   forward   boolean if bot is turning forward or backward
+* @params   x         speed of motors
 *
-* @args  degrees   int     amount of degrees to turn right
-*        forward   bool    boolean if bot is turning forward or backward
-*        x         int     speed of motors
 */
 void fancyTurnRightDegrees(int degrees, bool forward=true, int x=80)
 {
@@ -306,13 +300,12 @@ void fancyTurnRightDegrees(int degrees, bool forward=true, int x=80)
 }
 
 /**
-* @void fancyTurnLeftDegrees
+* Turns bot left only using left side motors
 *
-* @desc turns bot left only using left side motors
+* @params   degrees   amount of degrees to turn left
+* @params   forward   boolean if bot is turning forward or backward
+* @params   x         speed of motors
 *
-* @args  degrees   int     amount of degrees to turn left
-*        forward   bool    boolean if bot is turning forward or backward
-*        x         int     speed of motors
 */
 void fancyTurnLeftDegrees(int degrees, bool forward=true, int x=80)
 {
@@ -361,12 +354,11 @@ void fancyTurnLeftDegrees(int degrees, bool forward=true, int x=80)
 
 
 /**
-* @void turnRightDegrees
+* Turns bot right a given amount of degrees
 *
-* @desc turns bot right a given amount of degrees
+* @params  degree  amount of degrees to turn right
+*	@params	 x       speed of motors
 *
-* @args  degree  int    amount of degrees to turn right
-*				 x       float  speed of motors
 */
 void turnRightDegrees(float degree, float x=90)
 {
@@ -429,12 +421,11 @@ void turnRightDegrees(float degree, float x=90)
 }
 
 /**
-* @void turnLeftDegrees
+* Turns bot left a given amount of degrees
 *
-* @desc turns bot left a given amount of degrees
+* @params  degree  amount of degrees to turn left
+*	@params	 x       speed of motors
 *
-* @args  degree  int    amount of degrees to turn left
-*				 x       float  speed of motors
 */
 void turnLeftDegrees(float degree, float x=90)
 {
@@ -499,12 +490,11 @@ void turnLeftDegrees(float degree, float x=90)
 
 
 /**
-* @void turnRightSeconds
+* Turns bot right a given amount of seconds
 *
-* @desc turns bot right a given amount of seconds
+* @params  seconds   amount of seconds to turn right
+* @params	 x         speed of motors
 *
-* @args  seconds   int    amount of seconds to turn right
-*				 x         float  speed of motors
 */
 void turnRightSeconds(float seconds, float x=118)
 {
@@ -517,12 +507,11 @@ void turnRightSeconds(float seconds, float x=118)
 }
 
 /**
-* @void turnLeftSeconds
+* Turns bot left a given amount of seconds
 *
-* @desc turns bot left a given amount of seconds
+* @params  seconds   amount of seconds to turn left
+* @params	 x         speed of motors
 *
-* @args  seconds   int    amount of seconds to turn left
-*				 x         float  speed of motors
 */
 void turnLeftSeconds(float seconds, float x=118)
 {
@@ -533,4 +522,3 @@ void turnLeftSeconds(float seconds, float x=118)
 	wait1Msec(seconds*1000);
 	fullStop();
 }
-
