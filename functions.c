@@ -202,8 +202,8 @@ void fullStop(int x=118,int direction=0, bool fancy=false)
 *
 * @author Bernard Suwirjo  bsuwirjo@gmail.com
 *
-* @params  s  amount of seconds to move forward
-*	@params  x  speed of motors
+* @param  s  amount of seconds to move forward
+*	@param  x  speed of motors
 *
 */
 void forwardSeconds(float s,float x=118)
@@ -217,13 +217,13 @@ void forwardSeconds(float s,float x=118)
 	fullStop(x);//stop <-- kind of interchangeble with clearMotor()
 }
 
-/*
+/**
 * Moves bot backward for a given amount of seconds
 *
 * @author Bernard Suwirjo  bsuwirjo@gmail.com
 *
-* @params  s  amount of seconds to move backward
-*	@params  x  speed of motors
+* @param  s  amount of seconds to move backward
+*	@param  x  speed of motors
 *
 */
 void backwardSeconds(float s, float x=118)
@@ -242,6 +242,7 @@ void backwardSeconds(float s, float x=118)
 * Locks left side motors with PI loop
 *
 * @warning function does not work
+*
 * @author Sean Kelley  sgtkode01@gmail.com
 *
 */
@@ -265,6 +266,7 @@ task lockLeftSide()
 * Locks right side motors with PI loop
 *
 * @warning function does not work
+*
 * @author Sean Kelley  sgtkode01@gmail.com
 *
 */
@@ -283,16 +285,17 @@ task lockRightSide()
 	}
 }
 
-/*
+/**
 * Turns bot right only using left side motors
 *
 * @warning requires gyro
+*
 * @author Bernard Suwirjo  bsuwirjo@gmail.com
 * @author Sean Kelley  sgtkode01@gmail.com
 *
-* @params   degrees   amount of degrees to turn right
-* @params   forward   boolean if bot is turning forward or backward
-* @params   x         speed of motors
+* @param   degrees   amount of degrees to turn right
+* @param   forward   boolean if bot is turning forward or backward
+* @param   x         speed of motors
 *
 */
 void fancyTurnRightDegrees(int degrees, bool forward=true, int x=80)
@@ -336,16 +339,17 @@ void fancyTurnRightDegrees(int degrees, bool forward=true, int x=80)
 
 }
 
-/*
+/**
 * Turns bot left only using left side motors
 *
 * @warning requires gyro
+*
 * @author Bernard Suwirjo  bsuwirjo@gmail.com
 * @author Sean Kelley  sgtkode01@gmail.com
 *
-* @params   degrees   amount of degrees to turn left
-* @params   forward   boolean if bot is turning forward or backward
-* @params   x         speed of motors
+* @param   degrees   amount of degrees to turn left
+* @param   forward   boolean if bot is turning forward or backward
+* @param   x         speed of motors
 *
 */
 void fancyTurnLeftDegrees(int degrees, bool forward=true, int x=80)
@@ -396,11 +400,12 @@ void fancyTurnLeftDegrees(int degrees, bool forward=true, int x=80)
 * Turns bot right a given amount of degrees
 *
 * @warning requires gyro
+*
 * @author Bernard Suwirjo  bsuwirjo@gmail.com
 * @author Sean Kelley  sgtkode01@gmail.com
 *
-* @params  degree  amount of degrees to turn right
-*	@params	 x       speed of motors
+* @param  degree  amount of degrees to turn right
+*	@param	 x       speed of motors
 *
 */
 void turnRightDegrees(float degree, float x=90)
@@ -446,8 +451,8 @@ void turnRightDegrees(float degree, float x=90)
 * @author Bernard Suwirjo  bsuwirjo@gmail.com
 * @author Sean Kelley  sgtkode01@gmail.com
 *
-* @params  degree  amount of degrees to turn left
-*	@params	 x       speed of motors
+* @param  degree  amount of degrees to turn left
+*	@param	 x       speed of motors
 *
 */
 void turnLeftDegrees(float degree, float x=90)
@@ -493,8 +498,8 @@ void turnLeftDegrees(float degree, float x=90)
 *
 * @author Bernard Suwirjo  bsuwirjo@gmail.com
 *
-* @params  seconds   amount of seconds to turn right
-* @params	 x         speed of motors
+* @param  seconds   amount of seconds to turn right
+* @param	 x         speed of motors
 *
 */
 void turnRightSeconds(float seconds, float x=118)
@@ -513,8 +518,8 @@ void turnRightSeconds(float seconds, float x=118)
 *
 * @author Bernard Suwirjo  bsuwirjo@gmail.com
 *
-* @params  seconds   amount of seconds to turn left
-* @params	 x         speed of motors
+* @param  seconds   amount of seconds to turn left
+* @param	 x         speed of motors
 *
 */
 void turnLeftSeconds(float seconds, float x=118)
