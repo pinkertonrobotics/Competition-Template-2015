@@ -11,7 +11,7 @@
  *
  * @author	 Sean Kelley      sgtkode01@gmail.com
  * @author   Bernard Suwirjo  bsuwirjo@gmail.com
->>>>>>> b966c9c9713ae7e2bdc2c7027f2575406619bd9b
+ *
  */
 
 /////////////////////////////////////////////////////////////////////////////////////////
@@ -19,6 +19,7 @@
 //                                 Table of Contents
 //
 //			Function Name              Arguments  *x is defualt for motor speed
+//
 // 			drive()--------------------bool half
 //			clearMotor()---------------None
 //			motorcheck()---------------None
@@ -34,6 +35,7 @@
 //
 //
 /////////////////////////////////////////////////////////////////////////////////////////
+
 
 /////////////////////////////////////////////////////////////////////////////////////////
 //
@@ -228,13 +230,12 @@ void backwardSeconds(float s, float x=118)
 }
 
 /**
-* @task lockLeftSide
 *
-* @desc locks left side motors with PI loop
+* Locks left side motors with PI loop
 *
-* @args  N/A
+* @author Sean Kelley  sgtkode01@gmail.com
+*
 */
-
 task lockLeftSide()
 {
 	float target = 0;
@@ -251,11 +252,11 @@ task lockLeftSide()
 }
 */
 /**
-* @task lockRightSide
 *
-* @desc locks right side motors with PI loop
+* Locks right side motors with PI loop
 *
-* @args  N/A
+* @author Sean Kelley  sgtkode01@gmail.com
+*
 */
 task lockRightSide()
 {
@@ -276,6 +277,7 @@ task lockRightSide()
 * Turns bot right only using left side motors
 *
 * @author Bernard Suwirjo  bsuwirjo@gmail.com
+* @author Sean Kelley  sgtkode01@gmail.com
 *
 * @params   degrees   amount of degrees to turn right
 * @params   forward   boolean if bot is turning forward or backward
@@ -327,6 +329,7 @@ void fancyTurnRightDegrees(int degrees, bool forward=true, int x=80)
 * Turns bot left only using left side motors
 *
 * @author Bernard Suwirjo  bsuwirjo@gmail.com
+* @author Sean Kelley  sgtkode01@gmail.com
 *
 * @params   degrees   amount of degrees to turn left
 * @params   forward   boolean if bot is turning forward or backward
@@ -381,6 +384,7 @@ void fancyTurnLeftDegrees(int degrees, bool forward=true, int x=80)
 * Turns bot right a given amount of degrees
 *
 * @author Bernard Suwirjo  bsuwirjo@gmail.com
+* @author Sean Kelley  sgtkode01@gmail.com
 *
 * @params  degree  amount of degrees to turn right
 *	@params	 x       speed of motors
@@ -427,6 +431,7 @@ void turnRightDegrees(float degree, float x=90)
 * Turns bot left a given amount of degrees
 *
 * @author Bernard Suwirjo  bsuwirjo@gmail.com
+* @author Sean Kelley  sgtkode01@gmail.com
 *
 * @params  degree  amount of degrees to turn left
 *	@params	 x       speed of motors
@@ -509,4 +514,3 @@ void turnLeftSeconds(float seconds, float x=118)
 	wait1Msec(seconds*1000); //Wait desired amount of time
 	fullStop(); //Stop
 }
-
