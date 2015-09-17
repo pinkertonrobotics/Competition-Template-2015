@@ -75,7 +75,6 @@ task usercontrol(){
     if(bVEXNETActive){
 
 
-      
       /////////////////////////////////////////////////////////////////////////////////////////
       //
       //                                      Drive
@@ -85,7 +84,7 @@ task usercontrol(){
   		motor[FR] = vexRT[Ch2];
   		motor[BL] = vexRT[Ch3];
   		motor[FL] = vexRT[Ch3];
-
+//testing
       wait1Msec(10);
     }
 	}
