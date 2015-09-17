@@ -7,12 +7,8 @@
  * by itself, it will not work. Instead, save it
  * and compile main.c
  *
-<<<<<<< HEAD
  * Also, you must include your motor and sensor setup somewhere in this file.
  *
- * @authors		Sean Kelley     sgtkode01@gmail.com
- *						Bernard Suwirjo bsuwirjo@gmail.com
-=======
  * @author	 Sean Kelley      sgtkode01@gmail.com
  * @author   Bernard Suwirjo  bsuwirjo@gmail.com
 >>>>>>> b966c9c9713ae7e2bdc2c7027f2575406619bd9b
@@ -22,7 +18,7 @@
 //
 //                                 Table of Contents
 //
-//			Function Name						   Arguments  *x is defualt for motor speed
+//			Function Name              Arguments  *x is defualt for motor speed
 // 			drive()--------------------bool half
 //			clearMotor()---------------None
 //			motorcheck()---------------None
@@ -52,7 +48,7 @@
 *
 * @param  half  determines if motors should be running at half speed
 */
-void drive(bool half)
+void drive(bool half=false)
 {
 			if (half==false)//Check if drive toggles half speed.
 			{
@@ -194,6 +190,8 @@ void fullStop(int x=118,int direction=0, bool fancy=false)
 /**
 * Moves bot forward for a given amount of seconds
 *
+* @author Bernard Suwirjo  bsuwirjo@gmail.com
+*
 * @params  s  amount of seconds to move forward
 *	@params  x  speed of motors
 *
@@ -209,8 +207,10 @@ void forwardSeconds(float s,float x=118)
 	fullStop(x);//stop <-- kind of interchangeble with clearMotor()
 }
 
-/**
+/*
 * Moves bot backward for a given amount of seconds
+*
+* @author Bernard Suwirjo  bsuwirjo@gmail.com
 *
 * @params  s  amount of seconds to move backward
 *	@params  x  speed of motors
@@ -228,13 +228,13 @@ void backwardSeconds(float s, float x=118)
 }
 
 /**
-<<<<<<< HEAD
-* @void fancyTurnRightDegrees
-=======
-* Locks left side motors with PI loop
+* @task lockLeftSide
 *
+* @desc locks left side motors with PI loop
+*
+* @args  N/A
 */
-/*
+
 task lockLeftSide()
 {
 	float target = 0;
@@ -257,7 +257,6 @@ task lockLeftSide()
 *
 * @args  N/A
 */
-/*
 task lockRightSide()
 {
 	float target = 0;
@@ -272,11 +271,11 @@ task lockRightSide()
 	  motor[BR] = error*pGain+errorSum*iGain;
 	}
 }
-*/
 
-/**
+/*
 * Turns bot right only using left side motors
->>>>>>> b966c9c9713ae7e2bdc2c7027f2575406619bd9b
+*
+* @author Bernard Suwirjo  bsuwirjo@gmail.com
 *
 * @params   degrees   amount of degrees to turn right
 * @params   forward   boolean if bot is turning forward or backward
@@ -324,8 +323,10 @@ void fancyTurnRightDegrees(int degrees, bool forward=true, int x=80)
 
 }
 
-/**
+/*
 * Turns bot left only using left side motors
+*
+* @author Bernard Suwirjo  bsuwirjo@gmail.com
 *
 * @params   degrees   amount of degrees to turn left
 * @params   forward   boolean if bot is turning forward or backward
@@ -379,6 +380,8 @@ void fancyTurnLeftDegrees(int degrees, bool forward=true, int x=80)
 /**
 * Turns bot right a given amount of degrees
 *
+* @author Bernard Suwirjo  bsuwirjo@gmail.com
+*
 * @params  degree  amount of degrees to turn right
 *	@params	 x       speed of motors
 *
@@ -422,6 +425,8 @@ void turnRightDegrees(float degree, float x=90)
 
 /**
 * Turns bot left a given amount of degrees
+*
+* @author Bernard Suwirjo  bsuwirjo@gmail.com
 *
 * @params  degree  amount of degrees to turn left
 *	@params	 x       speed of motors
@@ -468,6 +473,8 @@ void turnLeftDegrees(float degree, float x=90)
 /**
 * Turns bot right a given amount of seconds
 *
+* @author Bernard Suwirjo  bsuwirjo@gmail.com
+*
 * @params  seconds   amount of seconds to turn right
 * @params	 x         speed of motors
 *
@@ -486,6 +493,8 @@ void turnRightSeconds(float seconds, float x=118)
 /**
 * Turns bot left a given amount of seconds
 *
+* @author Bernard Suwirjo  bsuwirjo@gmail.com
+*
 * @params  seconds   amount of seconds to turn left
 * @params	 x         speed of motors
 *
@@ -500,3 +509,4 @@ void turnLeftSeconds(float seconds, float x=118)
 	wait1Msec(seconds*1000); //Wait desired amount of time
 	fullStop(); //Stop
 }
+
