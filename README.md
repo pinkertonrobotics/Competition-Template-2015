@@ -9,7 +9,7 @@ If for some reason you want to download the code manually, follow these steps:
   2. Extract the contents of the zip file
   3. main.c is the competition code
 
-Finally, the change log for the template can be found here:
+Finally, the change log for 241C can be found here:
   1. https://github.com/sgtkode/241C-Competition-Code/commits/master
 
 
