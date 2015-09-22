@@ -9,6 +9,7 @@
  *
  * @author		Sean Kelley      sgtkode01@gmail.com
  * @author		Bernard Suwirjo  bsuwirjo@gmail.com
+ * @author 		Spencer Couture  spence.couture@gmail.com
  */
 
 
