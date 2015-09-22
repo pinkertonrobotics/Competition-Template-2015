@@ -7,7 +7,7 @@ This is the competition template for all pinkerton robotics code. You will not c
 - 241 A: N/A
 - 241 B: https://github.com/pigion138138/241B-Competition-Code
 - 241 C: https://github.com/sgtkode/241C-Competition-Code
-- 241 D: N/A
+- 241 D: https://github.com/1amTim/241D-Competition-Code
 - 241 E: https://github.com/bsuwirjo/241E-Competition-Code
 - 241 F: https://github.com/Jotin2/241F-Competition-Code
 
