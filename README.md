@@ -22,7 +22,7 @@ If for some reason you want to download the code manually, follow these steps:
 
 #### Documentation
   * The Pinkerton Code Documentation HQ can be found [here](http://pinkertonrobotics.github.io).
-  * Pinkerton uses [Doxygen](http://www.stack.nl/~dimitri/doxygen/) to generate html documentation for our code and a [Jenkins CI Server](https://jenkins-ci.org/) to keep it up to date. Click [here](http://pinkertonrobotics.github.io/about)
+  * Pinkerton uses [Doxygen](http://www.stack.nl/~dimitri/doxygen/) to generate html documentation for our code and a [Jenkins CI Server](https://jenkins-ci.org/) to keep it up to date. Click [here](http://pinkertonrobotics.github.io/about) to learn more.
 
 #### Contribution
 If you happen to make a super awesome change to your code that you think should be included in the competition template so everyone else can have it, talk to Sean <@sgtkode> about making a pull request. More info can be found here: [Github Pull Requests](https://help.github.com/articles/using-pull-requests/)
