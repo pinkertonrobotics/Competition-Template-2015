@@ -217,7 +217,7 @@ void forwardSeconds(float s,float x=118)
 	fullStop(x);//stop <-- kind of interchangeble with clearMotor()
 }
 
-/*
+/**
 * Moves bot backward for a given amount of seconds
 *
 * @author Bernard Suwirjo  bsuwirjo@gmail.com
@@ -283,7 +283,7 @@ task lockRightSide()
 	}
 }
 
-/*
+/**
 * Turns bot right only using left side motors
 *
 * @warning requires gyro
@@ -336,7 +336,7 @@ void fancyTurnRightDegrees(int degrees, bool forward=true, int x=80)
 
 }
 
-/*
+/**
 * Turns bot left only using left side motors
 *
 * @warning requires gyro
