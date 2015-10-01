@@ -1,4 +1,5 @@
 #pragma config(Sensor, in1,    gyro,           sensorGyro)
+#pragma config(Sensor, dgtl1,  encoder,        sensorQuadEncoder)
 #pragma config(Motor,  port2,           backl,         tmotorVex393_MC29, openLoop, reversed)
 #pragma config(Motor,  port3,           frontl,        tmotorVex393_MC29, openLoop, reversed)
 #pragma config(Motor,  port8,           backr,         tmotorVex393_MC29, openLoop)
