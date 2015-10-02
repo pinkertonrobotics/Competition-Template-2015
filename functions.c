@@ -167,7 +167,7 @@ void backwardSeconds(float seconds, int speed=MOTOR_SPEED)
 * @param  speed									speed of motors
 *
 */
-int DriveByEncoder( int encoder_count, int timeout_in_seconds = 5 , int speed=MOTOR_SPEED){
+int driveByEncoder( int encoder_count, int timeout_in_seconds = 5 , int speed=MOTOR_SPEED){
 	int  timeout;
 
 	// Drive motor until encoder has moved a number counts or
