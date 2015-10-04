@@ -1,12 +1,12 @@
-# 241C Competition Code Documentation
+# 241<letter> Competition Code Documentation
 
-This is the documentation home page for team 241C. Click "Files" in the top menu
+This is the documentation home page for team 241<letter>. Click "Files" in the top menu
 to begin browsing.
 
 The actual repository for the code can be found here
-  1. https://github.com/sgtkode/241C-Competition-Code
+  1. <link to your repo>
 
 The change log for the code can be found here:
-  1. https://github.com/sgtkode/241C-Competition-Code/commits/master
+  1. <link to your repo>/commits/master
 
 [Back to Pinkerton Robotics Home](https://pinkertonrobotics.github.io)
