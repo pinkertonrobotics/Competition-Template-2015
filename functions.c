@@ -29,9 +29,8 @@
 //
 /////////////////////////////////////////////////////////////////////////////////////////
 
-#define TIMEOUT_CNT_PER_SEC    10
-#define MOTOR_SPEED        118
-#define MOTOR_STOP_SPEED        0
+#define TIMEOUT_CNT_PER_SEC    10   /*!< amount of timeout counts per second */
+#define MOTOR_SPEED        		 118  /*!< default motor speed */
 
 int frontLeftVal  = 0; /*!< value of the front left  motor */
 int backLeftVal   = 0; /*!< value of the back  left  motor */
@@ -64,7 +63,7 @@ void clearMotors(){
 *
 * @author Sean Kelley      sgtkode01@gmail.com
 *
-* @params  speed   the speed of the motors
+* @param  speed   the speed of the motors
 */
 void setMotors(int speed){
 	//Set all motor values to power value
@@ -80,7 +79,7 @@ void setMotors(int speed){
 * @author Spencer Couture  spence.couture@gmail.com
 * @author Sean Kelley  sgtkode01@gmail.com
 *
-* @params  speed   the speed that the left motors will be set to
+* @param  speed   the speed that the left motors will be set to
 *
 */
 void setMotorsLeft(int speed){
@@ -94,7 +93,7 @@ void setMotorsLeft(int speed){
 * @author Spencer Couture  spence.couture@gmail.com
 * @author Sean Kelley  sgtkode01@gmail.com
 *
-* @params  speed   the speed that the right motors will be set to
+* @param  speed   the speed that the right motors will be set to
 *
 */
 void setMotorsRight(int speed){
