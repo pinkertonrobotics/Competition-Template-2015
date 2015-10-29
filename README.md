@@ -4,7 +4,7 @@
 
 This is the competition template for all pinkerton robotics code. You will not commit directly to this repository; you will instead commit to your team's fork. The forked repositories are run by your team's programming leader. Here are the links to the forks:
 
-- 241 A: https://github.com/nathan16014/241A-Competition-Template
+- 241 A: https://github.com/nathan16014/241A-Competition-Code
 - 241 B: https://github.com/pigion138138/241B-Competition-Code
 - 241 C: https://github.com/sgtkode/241C-Competition-Code
 - 241 D: https://github.com/1amTim/241D-Competition-Code
